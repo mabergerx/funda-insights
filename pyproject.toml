@@ -7,6 +7,11 @@ readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.10"
+requests = "^2.31.0"
+jupyterlab = "^4.0.10"
+ipykernel = "^6.29.0"
+bs4 = "^0.0.2"
+lxml = "^5.1.0"
 
 
 [build-system]
