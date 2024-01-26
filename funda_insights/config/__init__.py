@@ -4,8 +4,6 @@ The log configuration is set based on the log_config.yaml or log_config_ota.yaml
 """
 
 from typing import Any, Dict
-from importlib.resources import files
-
 import yaml
 
 
