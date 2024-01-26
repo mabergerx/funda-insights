@@ -1,0 +1,109 @@
+features_combined:
+- Eigendomssituatie
+- Aantal woonlagen
+- Voorzieningen
+- Wonen
+- Status
+- Externe bergruimte
+- Periodieke bijdrage
+- Jaarlijkse vergadering
+- Energielabel
+- Reservefonds aanwezig
+- Onderhoudsplan
+- Soort dak
+- Balkon/dakterras
+- Soort appartement
+- Soort parkeergelegenheid
+- Specifiek
+- Gebouwgebonden buitenruimte
+- Ligging
+- Bouwjaar
+- Oppervlakte
+- Opstalverzekering
+- Ligging tuin
+- Achtertuin
+- Inschrijving KvK
+- Vraagprijs
+- Aantal kamers
+- Aantal badkamers
+- Inhoud
+- Aanvaarding
+- Tuin
+- Warm water
+- Schuur/berging
+- Soort bouw
+- Verwarming
+- Gelegen op
+- Cv-ketel
+- Bijdrage VvE
+- Badkamervoorzieningen
+- Isolatie
+- Perceel
+- Soort woonhuis
+features_apt:
+- Vraagprijs
+- Status
+- Aanvaarding
+- Bijdrage VvE
+- Soort appartement
+- Soort bouw
+- Bouwjaar
+- Soort dak
+- Wonen
+- Gebouwgebonden buitenruimte
+- Externe bergruimte
+- Inhoud
+- Aantal kamers
+- Aantal badkamers
+- Badkamervoorzieningen
+- Aantal woonlagen
+- Gelegen op
+- Voorzieningen
+- Energielabel
+- Isolatie
+- Verwarming
+- Warm water
+- Ligging
+- Balkon/dakterras
+- Schuur/berging
+- Voorzieningen
+- Soort parkeergelegenheid
+- Inschrijving KvK
+- Jaarlijkse vergadering
+- Periodieke bijdrage
+- Reservefonds aanwezig
+- Onderhoudsplan
+- Opstalverzekering
+features_huis:
+- Vraagprijs
+- Status
+- Aanvaarding
+- Soort woonhuis
+- Soort bouw
+- Bouwjaar
+- Specifiek
+- Soort dak
+- Wonen
+- Gebouwgebonden buitenruimte
+- Externe bergruimte
+- Perceel
+- Inhoud
+- Aantal kamers
+- Aantal badkamers
+- Badkamervoorzieningen
+- Aantal woonlagen
+- Voorzieningen
+- Energielabel
+- Isolatie
+- Verwarming
+- Warm water
+- Cv-ketel
+- Oppervlakte
+- Eigendomssituatie
+- Ligging
+- Tuin
+- Achtertuin
+- Ligging tuin
+- Schuur/berging
+- Voorzieningen
+- Soort parkeergelegenheid
