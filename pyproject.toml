@@ -2,7 +2,7 @@
 name = "funda-insights"
 version = "0.1.0"
 description = "A project to gain insights into the housing markrt using funda."
-authors = ["Mark Berger <maberger0811@gmail.com>"]
+authors = ["Mark Berger <maberger0811@gmail.com>", "Ronald van Velzen"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
@@ -12,6 +12,7 @@ jupyterlab = "^4.0.10"
 ipykernel = "^6.29.0"
 bs4 = "^0.0.2"
 lxml = "^5.1.0"
+funda-scraper = "^1.0.11"
 
 
 [build-system]
