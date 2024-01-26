@@ -85,6 +85,7 @@ def scrape_funda_for_query(area, n_pages, find_past=False, page_start=1):
 
     df = pd.DataFrame(house_data)
 
+    logger.info("Writing data to csv file")
     date = str(datetime.now().date()).replace("-", "")
     status = "unavailable" if find_past else "available"
     df.to_csv(f"./data/funda_data_{area}_{status}_{date}.csv", index=False)
@@ -98,12 +99,12 @@ if __name__ == "__main__":
         help="Specify which area you are looking for",
         default="amsterdam",
     )
-    # parser.add_argument(
-    #     "--find_past",
-    #     type=bool,
-    #     help="Indicate whether you want to use historical data or not",
-    #     default=False,
-    # )
+    parser.add_argument(
+        "--find_past",
+        type=bool,
+        help="Indicate whether you want to use historical data or not",
+        default=False,
+    )
     parser.add_argument(
         "--page_start", type=int, help="Specify which page to start scraping", default=1
     )
@@ -127,3 +128,4 @@ if __name__ == "__main__":
         page_start=args.page_start,
     )
 
+    logger.info("End of script; scraped data")
