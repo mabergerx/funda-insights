@@ -40,6 +40,7 @@ features_combined:
 - Isolatie
 - Perceel
 - Soort woonhuis
+- verkoop_datum
 features_apt:
 - Vraagprijs
 - Status

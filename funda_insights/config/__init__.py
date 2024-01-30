@@ -1,10 +1,8 @@
-"""This module contains the configuration for the application
-
-The log configuration is set based on the log_config.yaml or log_config_ota.yaml
-"""
+"""This module contains the configuration for the application"""
 
 from typing import Any, Dict
 import yaml
+import logging
 
 
 def read_yaml_file(yaml_path: str) -> Dict[str, Any]:
@@ -25,3 +23,6 @@ def read_yaml_file(yaml_path: str) -> Dict[str, Any]:
 
 
 HOUSE_FEATURES = read_yaml_file("funda_insights/config/house_features.yaml")
+
+logger = logging.getLogger("funda_insights")
+logger.setLevel(logging.INFO)
