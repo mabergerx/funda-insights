@@ -8,8 +8,11 @@ import glob
 import os
 from typing import List
 
-from funda_insights.preprocess import create_dataframe
-from funda_insights.scrape_utils import fetch_all_links, get_house_specifics_for_url
+from funda_insights.backend.preprocess import create_dataframe
+from funda_insights.backend.scrape_utils import (
+    fetch_all_links,
+    get_house_specifics_for_url,
+)
 from funda_insights.config import logger
 
 
@@ -38,7 +41,7 @@ def write_data(data,
 def get_most_recent_file_in_dir(area, availability_option):
     try:
         list_of_files = glob.glob(
-            f"./data/url_data_{area}_{availability_option}*")
+            f"../data/url_data_{area}_{availability_option}*")
         return max(list_of_files, key=os.path.getctime)
     except ValueError:
         return None
@@ -149,6 +152,10 @@ if __name__ == "__main__":
         "--start_index", type=int, default=1,
         help="Index of the url to start with",
     )
+    parser.add_argument(
+        "--load_urls_from_disk", action="store_true",
+        help="Load the house urls from file on disk",
+    )
 
     args = parser.parse_args()
 
@@ -162,7 +169,7 @@ if __name__ == "__main__":
         min_price=args.min_price,
         max_price=args.max_price,
         start_index=args.start_index,
-        load_urls_from_file=True,
+        load_urls_from_file=args.load_urls,
     )
 
     logger.info("End of script; scraped data")
