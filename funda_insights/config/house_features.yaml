@@ -24,6 +24,7 @@ features_combined:
 - Achtertuin
 - Inschrijving KvK
 - Vraagprijs
+- Laatste vraagprijs
 - Aantal kamers
 - Aantal badkamers
 - Inhoud
@@ -40,7 +41,8 @@ features_combined:
 - Isolatie
 - Perceel
 - Soort woonhuis
-- verkoop_datum
+- Verkoopdatum
+- Aangeboden sinds
 features_apt:
 - Vraagprijs
 - Status

@@ -43,11 +43,14 @@ def get_house_popularity_stats(soup):
         saves = insights["nrOfSaves"]
         return {"bekeken": views,
                 "opgeslagen": saves,
-                "aangeboden_sinds": published_date}
+                "aangeboden_sinds": published_date,
+                "funda_global_house_id": house_global_id}
     except:
         return {"aangeboden_sinds": datetime.today().strftime("%d-%m-%Y"),
                 'bekeken': "n.v.t.",
-                'opgeslagen': "n.v.t."}
+                'opgeslagen': "n.v.t.",
+                "funda_global_house_id": "n.v.t.",
+                }
 
 
 def get_value_from_css(soup: BeautifulSoup, selector: str) -> Optional[str]:
